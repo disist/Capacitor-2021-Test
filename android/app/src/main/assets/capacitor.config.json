@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "capacitor2021",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
