@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor-community/admob": "^3.2.0",
     "@capacitor/android": "3.2.0",
     "@capacitor/app": "^1.0.2",
     "@capacitor/core": "3.2.0",
@@ -45,7 +46,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:device:android": "ionic capacitor build android"
   },
   "eslintConfig": {
     "extends": [

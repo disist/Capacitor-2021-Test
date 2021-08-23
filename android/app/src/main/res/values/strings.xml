@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Capacitor 2021</string>
     <string name="title_activity_main">capacitor2021</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="package_name">com.mycompanytest.myapptest</string>
+    <string name="custom_url_scheme">com.mycompanytest.myapptest</string>
+    <string name="admob_app_id">appId</string>
 </resources>
