@@ -21,9 +21,19 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { useEffect } from 'react';
+import { AdMob } from '@capacitor-community/admob';
 
-const App: React.FC = () => (
-  <IonApp>
+const App: React.FC = () => {
+  useEffect(() => {
+    AdMob.initialize({
+      requestTrackingAuthorization: true,
+      // testingDevices: ['2077ef9a63d2b398840261c8221a0c9b'],
+      initializeForTesting: true,
+    });
+  }, []);
+
+  return (<IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
@@ -34,7 +44,7 @@ const App: React.FC = () => (
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
-  </IonApp>
-);
+  </IonApp>)
+};
 
 export default App;
